@@ -1,0 +1,22 @@
+if FERRIS_GO_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Ferris-go-L"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if FERRIS_GO_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Ferris-go-R"
+
+endif
+
+if FERRIS_GO_LEFT || FERRIS_GO_RIGHT
+
+config ZMK_SPLIT
+    default y
+endif
